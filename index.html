@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <title> Formulário Para Pré-seleção </title>
+   <meta charset="utf-8">
+   <style>
+     *{
+       background: rgb(28,28,28);
+       color: rgb(135,206,250);
+       font-size: 30px;
+       font-style: oblique;
+       font-weight: normal;
+      }
+      h1 {
+        color: rgb(0,0,255);
+        font-size: 70px;
+        font-family: Jazz LET, fantasy;
+      }
+      p {
+        background: transparent;
+        border: transparent;
+        text-align: justify;
+        padding: 20px;
+        font-family: Times, Times New Romam, serif;
+        font-style: normal;
+        color: rgb(30,144,255);
+      }
+      form {
+       background: transparent;
+       border: transparent;
+       border-width: medium; 
+       margin: 20px;  
+      }
+      label {
+        background: transparent;
+        border: transparent;
+        padding: 20px;
+       color: rgb(135,206,250);
+       font-family: Times, Times New Romam, serif;
+        font-style: normal;
+      }
+      a {
+        background: transparent;
+        border: transparent;
+        color: rgb(72,209,204);
+        font-family: Times, Times New Romam, serif;
+      }
+      #links{
+        text-aling: center;
+        color: rgb(135,206,250);
+        font-size: 30px;
+        background-color: rgb(0,0,139);
+        box-shadow: 5px 5px 10px rgb(25,25,112);
+       }
+    </style>
+  </head>
+  
+  <body>
+    <center> <figure> <img src="/img/intro.png" width="500"/> </figure> </center>
+    <center> <h1> Formulário de pré seleção para estudar numa escola de magia </h1> </center>
+    <p> Como já deve ser de compreensão de muitos, quando um ser humano nasce, é escrito num livro e quando a criança completa 11 anos, é designada para uma das escolas. Mas no último século esse costume ficou um pouco ultrapassado e quisemos inovar, usando dessa tecnologia para termos contato com mais crianças, dos lugares mais variados do planeta. Essa ferramenta serve também para nos ajudarmos a nos naturalizarmos mais no mundo trouxa. </p> 
+    <p> Até pouco tempo as confirmações chegavam por meio de cartas, o que durante essa pandemia se tornou impossível. Portanto, por hora, essas cartas (assim como a lista de materiais) serão enviadas por email, trazendo assim mais segurança para os futuros estudantes, ou não. </p> 
+   <form>
+     <label> Informe seu nome:</label><br/>
+     <input name="nome" type="text" size=30 
+     placeholder="Digite seu nome"> <br/><br/>
+
+     <label> Informe sua idade:</label><br/>
+     <input name="idade" type="number" min="11" max="17"> <br/><br/>
+
+     <label> Informe sua data de nascimento:</label><br/>
+     <input name="datanasc" type="date"> <br/><br/>
+
+      <label> Informe seu email </label><br/>
+     <input name="email" type="email"> <br/><br/>
+
+     <label> Escreva seu endereço completo </label><br/>
+    <textarea cols=30 rows=3> </textarea> <br/><br/>
+
+      <label> Selecione seu sexo: </label> <br/>
+      <input nome="sexo" type="radio"> 
+      <label> Feminino </label><br/>
+      <input nome="sexo" type="radio"> 
+      <label> Masculino </label><br/><br/>
+
+      <label> Você é: </label><br/>
+      <input nome="sangue" type="radio"> 
+      <label> Bruxo </label><br/>
+      <input nome="sangue" type="radio"> 
+      <label> Mestiço </label><br/>
+      <input nome="sangue" type="radio"> 
+      <label> Nascido-Trouxa </label><br/>
+      <input nome="sangue" type="radio"> 
+      <label> Trouxa </label><br/>
+
+      <a href="https://harrypotter.fandom.com/pt-br/wiki/Bruxos"> Para maior compreensão dessas linhagens</a><br/><br/>
+
+      <label> Você possui algum desses dons? </label><br/>
+      <input name="dom" type="checkbox">
+      <label> Animagia </label><br/>
+      <input name="dom" type="checkbox">
+      <label> Descendência Veela </label><br/>
+      <input name="dom" type="checkbox">
+      <label> Ofidioglossia </label><br/>
+      <input name="dom" type="checkbox">
+      <label> Encantador de animais mágicos </label><br/>
+      <input name="dom" type="checkbox">
+      <label> Legilimência </label><br/>
+      <input name="dom" type="checkbox">
+      <label> Metamorfogia </label><br/>
+      <input name="dom" type="checkbox">
+      <label> Mediunidade </label><br/>
+      <input name="dom" type="checkbox">
+      <label> Não possuo dom </label><br/></br>
+
+      <label> Selecione sua escola de preferência </label><br/>
+      <select nome="escola" >
+        <option> Castelo Bruxo (Brasil) </option>
+        <option> Ilvermorny (Estados Unidos) </option>
+        <option> Uagadou (África Central) </option>
+        <option> Durmstrang (Noruega) </option>
+        <option> Mahoutokoro (Japão) </option>
+        <option> Beauxbatons (França) </option>
+        <option> Koldovstoretz (Rússia) </option>
+        <option> Hogwarts (Escócia) </option>
+      </select><br/>
+      <a href="https://www.legiaodosherois.com.br/lista/conheca-as-8-escolas-de-magia-do-mundo-bruxo-de-harry-potter.html"> Para mais informações sobre essas escolas </a><br/><br/>
+    <label> Escreva um curto texto argumentando por que deveríamos lhe aceitar nas nossas instituições </label><br/>
+    <textarea cols=30 rows=4> </textarea><br/><br/>
+
+    <button> Ok </button> &nbsp
+    <input type="reset" value="Limpar"> &nbsp
+    <input type="submit" value="Cadastrar"> &nbsp
+   </form>  
+   <br/> 
+    <a id="links" href="https://projeto-wizarding-world.deiseteles.repl.co"> Voltar para página inicial </a>
+    <br/><br/><br/>
+  </body>
+</html>
